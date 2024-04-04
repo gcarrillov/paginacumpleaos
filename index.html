@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Una bonita y sincera felicitación </title>
+  <style>
+    .body {
+      background-color: rgb(216, 139, 77);
+      text-align: center;
+    }
+
+    .body__title {
+      color: rgb(207, 30, 74);
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 100%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title"> HOY ES UN DIA ESPECIAL</h1>
+  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhkjbJYY2eW9VUrtXT27YKCdGYS-N1jyn1TBmek2iRjJRoqwNtXQBHW8j2nWyYQcttF3SDvqNYihaJOpASfDVGHL5JE3mzegdAPGrSgSVq4vHPjSppQl_JCUTue9ntlGZ7vas3ypXtbvUbgkhPlHRAQz6uDfUqFE6r0w_ehcSG_OqUg0FMIJY-mzMTEN_o"
+  alt="fotito">
+  <br>
+  <h1 class="body__title">¿continuamos con el saludo?</h1>
+  <br>
+  <button id="yes">pero pofavo!</button>
+  <button id="no">NO!</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const jijijiji = () => {
+      alert('primeramente quiero que sepa que lo di todo xd , es humilde pero al menos es algo');
+      alert(' Hoy es un día especial para celebrar la maravillosa persona que eres y para recordarte cuánto significas para mí.');
+      alert(' Que este nuevo "ciclo" este lleno de exitos, con nuevas metas y sobre todo nuevas experiencias que contribuyan aún más con su camino');
+      alert(' Eres una buena persona con muchos valores, que tiene mucho al mundo para ofrecer, no dejes que nada ni nadie apague tu hermoso brillo');
+      alert(' Tan solo espero que esta invitación te halla parecido algo especial y tal vez comico, esperemos que te guste; lo di todo')
+      location.href = 'https://tusecreto.io/secret/71164221';
+    };
+
+    const tite = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', jijijiji);
+    vuttonNo.addEventListener('mouseover', tite);
+  </script>
+</body>
+
+</html>
